@@ -12,6 +12,7 @@ body {
 
 p {
     font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .heading-title {
@@ -19,31 +20,42 @@ p {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
     color: black;
+    display: flex;
+    flex: wrap;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 /* Body Style End */
 
 /* Header and Navigation Style Start */
-.header {
-    padding: 20px;
+header {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background-color: black;
-    color: orange;
+    color: yellow;
+    width: auto;
+    height: 85px;
+    text-align: right;
 }
 
-.header nav {
+header nav {
     padding-top: 20px;
     margin-right: 15px;
-    float: right;
-    font-size: 23px;
+    font-size: 25px;
 }
 
-.header nav ul {
+header nav ul {
+    display: flex;
+    flex: wrap;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
     list-style-type: none;
 }
 
-.header nav ul li {
-    display: inline-block;
-    margin-left: 25px;
+
+header nav ul li a {
+    font-weight: lighter;
+    margin: 0 25px;
 }
 
 /* Hero Style Start */
@@ -54,10 +66,15 @@ p {
 }
 
 .hero h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 70px;
     text-align: left;
     color: darkslategray;
     margin: 15px auto 15px 70px;
+    display: flex;
+    flex: wrap;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 .avatar img {
@@ -78,6 +95,12 @@ p {
     height: 400px;
 }
 
+/.about-me p {
+    display: flex;
+    flex: wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 /* About Me Style End */
 
 /* Works Style Start */
@@ -87,11 +110,14 @@ p {
     display: inline-block;
     width: 100%;
     margin: 15px auto 30px 30px;
-
 }
 
 .app1 {
     margin-top: 30px;
+    display: flex;
+    flex: wrap;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .app1 img {
@@ -101,6 +127,13 @@ p {
     
 }
 
+.app2 {
+    margin-top: 30px;
+    display: flex;
+    flex: wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .app2 img {
     text-align: center;
     margin: 15px auto 15px 30px;
@@ -125,6 +158,11 @@ p {
     font: bold;
     color: chocolate;
     margin: 30px auto 30px auto;
+    padding: 25px;
+    display: flex;
+    flex: wrap;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 /* Contact Me Style End */
@@ -132,7 +170,39 @@ p {
 /* Footer Style Start */
 .footer {
     text-align: center;
-    margin: 15px auto 20px 20px;
+    margin: 30px auto 30px 70px;
 }
 
 /* Footer Style End */
+
+/* Media Queries Start */
+@media screen and (max-width: 980px) {
+    header {
+        justify-content: flex-end;
+    }
+
+    .about-me p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .avatar img {
+        max-width: 250px;
+        max-height: 350px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    header nav {
+        font-size: 18px;
+    }
+
+    .avatar img {
+        max-width: 200px;
+        max-height: 300px;
+    }
+
+}
+
+/* Media Queries End */
