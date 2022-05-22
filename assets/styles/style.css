@@ -95,7 +95,7 @@ header nav ul li a {
     height: 400px;
 }
 
-/.about-me p {
+.about-me p {
     display: flex;
     flex: wrap;
     flex-wrap: wrap;
