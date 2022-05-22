@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Body Style Start */
+body {
+    background-color: skyblue;
+}
+
+p {
+    font-size: 16px;
+}
+/* Body Style End */
+
+/* Header and Navigation Style Start */
+.header {
+    padding: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: black;
+    color: orange;
+}
+
+.header nav {
+    padding-top: 20px;
+    margin-right: 15px;
+    float: right;
+    font-size: 23px;
+}
+
+.header nav ul {
+    list-style-type: none;
+}
+
+.header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+/* Hero Style Start */
+.hero {
+    height: 600px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 70px;
+    text-align: center;
+    color: darkslategray;
+}
+
+.avatar img {
+    display: block;
+    margin: 15px auto;
+    max-width: 300px;
+    float: left;
+}
+
+/* Hero Style End */
+
+/* About Me Style Start */
+.about-me {
+    width: 90%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+/* About Me Style End */
+
+/* Works Style Start */
+
+.app1 img {
+    
+}
+
+.app2 img {
+
+}
+
+/* Works Style End */
+
+/* Contact Me Style Start */
+
+/* Contact Me Style End */
+
+/* Footer Style Start */
+
+/* Footer Style End */
